@@ -18,15 +18,48 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-html {
+body {
+    background: #f2f2f2;
 }
 
 // HOME PAGE 
 
 .bag {
-    
+    height: 650px;
+    width: 450px;
+    background: rgb(118, 158, 45);
+    border-radius: 100px 100px 40px 40px;
+    border: solid gray 5px;
 }
 
+
+.vertical_bar_1, .vertical_bar_2 {
+    position: relative;
+    width: 20px;
+    height: 100%;
+    z-index: 1;
+    background-color: white;
+}
+
+.vertical_bar_1 {
+    left: 210px;
+}
+
+.horizontal_bar_1, .horizontal_bar_2 {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+}
+
+.horizontal_bar_1 {
+    top: -550px;
+}
+
+.horizontal_bar_2 {
+    top: -350px;
+}
 .lens {
     
 }
@@ -35,11 +68,31 @@ html {
     padding: 2px;
 }
 
-
+.thumb:hover {
+    z-index : 1;
+    height: 100px;
+    width: 150px;
+    
+}
 .bag_header {
     padding-bottom: 20px;
 }
 
 .main_image {
     padding: 15px 2px 15px 2px;
+}
+
+.lens_50mm {
+
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    background: white;
+    z-index: 1;
+    top: -600px;
+    left: 50px;
+}
+
+.lens_35mm {
+    
 }
