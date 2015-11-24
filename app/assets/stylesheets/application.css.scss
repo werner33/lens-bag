@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html {
+}
+
+// HOME PAGE 
+
+.bag {
+    
+}
+
+.lens {
+    
+}
+
+.thumb {
+    padding: 2px;
+}
+
+.bag_header {
+    padding-bottom: 20px;
+}
+
+.main_image {
+    padding: 15px 2px 15px 2px;
+}
