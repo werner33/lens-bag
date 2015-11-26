@@ -59,8 +59,6 @@ body {
     border-right:  solid 10px white;
 }
     
-
-
 .lens {
     position: relative;
     margin: 0 auto;
@@ -98,7 +96,6 @@ body {
 .lens_d {
     top:  -190px;
     left: 220px;
-    
 }
 
 .lens_e {
@@ -125,19 +122,4 @@ body {
 
 .main_image {
     padding: 15px 2px 15px 2px;
-}
-
-.lens_50mm {
-
-    width: 180px;
-    height: 180px;
-    border-radius: 90px;
-    background: white;
-    z-index: 1;
-    top: -600px;
-    left: 50px;
-}
-
-.lens_35mm {
-    
 }
