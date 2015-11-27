@@ -55,17 +55,23 @@
           <h3 class="bag_header">Choose an image...</h3>    
           <%= image_tag 'landscape.jpg', size: '135x90', class: "thumb", id: "image_1", 
           :onclick=>"setImage(this)" %>
-          <img class="thumb" src="http://placehold.it/135x90">
-          <img class="thumb" src="http://placehold.it/135x90">
-          <img class="thumb" src="http://placehold.it/135x90">
+          <%= image_tag 'flower.jpg', size: '135x90', class: "thumb", id: "image_1", 
+          :onclick=>"setImage(this)" %>
+          <%= image_tag 'portrait.jpg', size: '135x90', class: "thumb", id: "image_1", 
+          :onclick=>"setImage(this)" %>
+          <%= image_tag 'architecture.jpg', size: '135x90', class: "thumb", id: "image_1", 
+          :onclick=>"setImage(this)" %>
         </div>
-        <%= image_tag 'http://placehold.it/560x382', size: '560x382', class: "main_image", id: "main_image" %>
+        <%= image_tag 'landscape.jpg', size: '560x382', class: "main_image", id: "main_image" %>
         <br>
         <img src="http://placehold.it/350x250">
     </div>
 </div>
 
 <script>
+
+var current_image = document.getElementById('main_image').getAttribute('src')
+
 function setImage(source) {
     var main_image = document.getElementById("main_image");
     var new_image = source.getAttribute('src');
