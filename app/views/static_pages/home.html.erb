@@ -64,20 +64,24 @@
         </div>
         <%= image_tag 'landscape_50mm.jpg', size: '560x382', class: "main_image", id: "main_image" %>
         <br>
-        <img src="http://placehold.it/350x250">
+        <div id="photo_info">
+          <p>Photo name: <span id="photo_name_text">Landscape</span></p>
+          <p>Focal length: <span id="focal_length"> 50mm.</p>
+        </div>
+        
     </div>
 </div>
 
 <script>
-
-
 var image_name = 'assets/landscape';
 var focal_length = '_50mm.jpg';
 
 function setImageName(source, focal_length) {
     var main_image = document.getElementById("main_image");
+    var photo_name_text = document.getElementById("photo_name_text");
     var new_image_name = source.getAttribute('src').split('_')[0];
     image_name = new_image_name;
+    photo_name_text.innerHTML = new_image_name.split('/')[2];
     main_image.setAttribute("src", image_name + focal_length);
 }
 
