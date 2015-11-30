@@ -17,12 +17,21 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter|Istok+Web);
 
 body {
     background: #f2f2f2;
 }
 
 // HOME PAGE 
+
+.banner { 
+    background: white;
+}
+
+.banner_text {
+    margin-left: 150px;
+}
 
 .bag {
     height: 650px;
@@ -65,8 +74,11 @@ body {
     width: 180px;
     height: 180px;
     border-radius: 90px;
-    background: white;
+    background: url(https://cdn.tutsplus.com/vector/uploads/legacy/tuts/33_Camera_Lens/step22b.jpg);
     text-align: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
 }
 
 .lens:hover { 
@@ -81,7 +93,7 @@ body {
 }
 
 .lens_a {
- top: 15px;   
+    top: 15px;   
 }
 
 .lens_b {
@@ -121,5 +133,38 @@ body {
 }
 
 .main_image {
-    padding: 15px 2px 15px 2px;
+    border: 3px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#photo_name_text, #focal_length_text, #aperture_text, #subtitle {
+    font-family: 'Architects Daughter', cursive;
+    
+}
+
+h1, h3, h5, p {
+    font-family: 'Istok Web', sans-serif;
+}
+
+p { 
+    font-size: 20px;
+}
+
+.paper {
+    margin-top: 15px;
+    padding: 7px 10px 15px 50px;
+    background-image: url("notebook_paper_crop.jpg");
+}
+
+.paper h3 {
+    text-decoration: underline;
+}
+
+.photo_options {
+    padding-left: 20px;
+}
+
+.aperture {
+    margin: 15px 0px 15px 20px;
 }
