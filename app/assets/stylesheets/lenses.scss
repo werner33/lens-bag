@@ -1,17 +1,49 @@
+.crazy { 
+    height: 500px;
+    width: 100%;
+    background-image: url('/assets/landscape.jpg');
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-size: cover;
+}
+
+.learn, .summary {
+    position: relative;
+    text-align: center;
+}
+
+.learn {
+    top: 160px;
+    color: white;
+    font-size: 60px;
+}
+
+.summary{
+    top: 200px;
+    font-size: 24px;
+    color: white;
+}
+
+.intro {
+    padding: 5px 10px 5px 20px;
+}
+
 .lenses {
     margin-top: 20px;
     background: white;
     padding-bottom: 20px;
+    margin-bottom: 200px;
 }
 
 .collapse {
     text-align: right;
 }
 .title { 
-    background-color: rgba(22, 130, 22, 0.39);
+    background-color: #769e2d;
     border-radius: 4px;
     padding: 4px 4px 4px 10px;
-    border: 2px solid white;
+    border: 1px solid white;
+    color: white;
 }
 
 .description{
@@ -32,4 +64,9 @@ button a {
 
 button a:hover {
     color: white;
+}
+
+.lens_image {
+    width: 200px;
+    height: 200px;
 }

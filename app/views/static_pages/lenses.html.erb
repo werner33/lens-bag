@@ -1,14 +1,26 @@
+<div class="crazy">
+   <h1 class="learn">Learn About Lenses!</h1>
+   <p class="summary">
+       Going to Lengths To Explain Focal Lengths.
+   </p>
+</div>
 <div class="container">
-    <div class="row lenses col-md-12">
+    <div class="lenses col-md-12">
         <div class="row">
-            <h1>Lens Bag</h1>
+            <div class="intro">
+                <h3>Click Below To Learn More About Each Lens.</h3>
+            </div>
             <h4 class="collapse">Collapse All</h4>
         </div>
         <% @lenses.each do |lens| %>
             <div class="title">
               <h3><%= lens.name %></h3>
             </div>
+            
             <div class="description">
+                <div class="lens_image col-md-3">
+                   <img class="lens_image" src="assets/lens.jpg" />
+                </div>
                 <p>
                     <%= lens.description %>
                 </p>
