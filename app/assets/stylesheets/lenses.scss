@@ -1,0 +1,35 @@
+.lenses {
+    margin-top: 20px;
+    background: white;
+    padding-bottom: 20px;
+}
+
+.collapse {
+    text-align: right;
+}
+.title { 
+    background-color: rgba(22, 130, 22, 0.39);
+    border-radius: 4px;
+    padding: 4px 4px 4px 10px;
+    border: 2px solid white;
+}
+
+.description{
+    display: none;
+    background: white;
+    padding: 10px;
+}
+
+.buttons {
+    text-align: right;
+    padding-right: 40px;
+}
+
+button a {
+    color: white;
+    font-color: white
+}
+
+button a:hover {
+    color: white;
+}

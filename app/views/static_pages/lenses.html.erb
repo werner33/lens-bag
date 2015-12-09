@@ -1,1 +1,29 @@
-<h1>Lenses</h1>
+<div class="container">
+    <div class="row lenses col-md-12">
+        <div class="row">
+            <h1>Lens Bag</h1>
+            <h4 class="collapse">Collapse All</h4>
+        </div>
+        <% @lenses.each do |lens| %>
+            <div class="title">
+              <h3><%= lens.name %></h3>
+            </div>
+            <div class="description">
+                <p>
+                    <%= lens.description %>
+                </p>
+                <div class="row buttons">
+                    <button class="btn btn-default btn-lg btn-primary">
+                        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                        <%= link_to "Photo Gallery", lens.gallery_url, class: "gallery" %>
+                    </button>
+                    <button class="btn btn-default btn-lg btn-success">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <%= link_to "Shop for this Lens.", lens.shop_url, class: "shop" %>
+                    </button>
+                </div>
+            </div>
+        <% end %> 
+    </div>
+</div>
+
