@@ -3,8 +3,9 @@
     width: 100%;
     background-image: url('/assets/landscape.jpg');
     background-repeat: no-repeat;
-    // background-attachment: fixed;
     background-size: cover;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .learn, .summary {
@@ -13,7 +14,7 @@
 }
 
 .learn {
-    top: 160px;
+    top: 200px;
     color: white;
     font-size: 60px;
 }
@@ -39,7 +40,7 @@
     text-align: right;
 }
 .title { 
-    background-color: #769e2d;
+    background-color: #00008B;
     border-radius: 4px;
     padding: 4px 4px 4px 10px;
     border: 1px solid white;
