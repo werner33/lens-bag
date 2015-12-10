@@ -1,0 +1,51 @@
+// Try Lenses
+.lens_selector {
+    width: 30%;
+    padding: 2px;
+    float: left;
+    text-align: center;
+}
+
+.lens_selector img {
+    width: 100%;
+}
+
+.main_image {
+    border: 3px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.thumb {
+    padding: 2px;
+    width: 22%;
+}
+
+.thumb:hover {
+    width: 24%;
+}
+
+
+.lens_layout {
+    width: 30%;
+    padding: 2px;
+    text-align: center;
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+#photo_name_text, #focal_length_text, #aperture_text, #subtitle {
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1, h3, h5, p {
+    font-family: 'Istok Web', sans-serif;
+}
+
+.aperture_icon {
+    margin: 5px 2px 5px 2px;
+}

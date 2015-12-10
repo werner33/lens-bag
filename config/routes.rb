@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root "static_pages#lenses"
-  get '/home' => 'static_pages#home'
+  get '/try_lenses' => 'static_pages#try_lenses'
   get '/aperture' => 'static_pages#aperture'
   resource :lenses
   # The priority is based upon order of creation: first created -> highest priority.
