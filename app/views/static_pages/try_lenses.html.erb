@@ -1,7 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-6 col-sm-12">
-            <h3>Photo Notes</h3>
+        <div class="main_element">
             <%= image_tag 'landscape_50mm.jpg', class: "main_image", id: "main_image" %>
             <br>
             <div id="photo_info">
@@ -10,7 +9,7 @@
                 <p>Aperture: <span id="aperture_text">f/2.8</p>
             </div>
         </div>
-        <div class="col-md-5 col-md-offset-1">
+        <div class="col-md-5 col-md-offset-7 col-sm-12">
             <div class="photo_option">
                 <h3>Select a photo...</h3>
                 <%= image_tag 'landscape_20mm.jpg', class: "thumb", id: "image_1", 

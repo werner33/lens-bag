@@ -10,13 +10,22 @@
     width: 100%;
 }
 
-.main_image {
-    border: 3px solid black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
+.main_element {
+    position: fixed;
+    z-index: 1;
+    background: white;
+    width: 60%;
 }
 
+.main_image {
+    border: 3px solid black;
+    // margin-bottom: 10px;
+    // width: 100%;
+}
+
+.photo_option {
+    margin-top: 250px;
+}
 
 .thumb {
     padding: 2px;
