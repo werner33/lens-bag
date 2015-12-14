@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root "static_pages#lenses"
+  root "static_pages#home"
+  get '/lenses' => 'static_pages#lenses'
   get '/try_lenses' => 'static_pages#try_lenses'
   get '/aperture' => 'static_pages#aperture'
   resource :lenses
