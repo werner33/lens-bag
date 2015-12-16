@@ -300,3 +300,26 @@ form span {
 input[name="email"]{
   font-size: 24px;
 }
+
+
+/* feature row */
+
+.feature-row {
+  margin: 40px 0;
+}
+
+.feature_title {
+  color: gray;
+  display: block;
+  margin-bottom: 10px;
+  h3, i {
+    display: inline;
+  }
+  &:hover {
+    color: black;
+  }
+  i {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+}
