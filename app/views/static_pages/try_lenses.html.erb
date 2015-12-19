@@ -1,6 +1,6 @@
 <div class="container">
-    <div class="row">
-        <div class="main_element">
+    <div class="row try_lenses">
+        <div class="col-md-6 main_element">
             <%= image_tag 'landscape_50mm.jpg', class: "main_image", id: "main_image" %>
             <br>
             <div id="photo_info">
@@ -9,7 +9,8 @@
                 <p>Aperture: <span id="aperture_text">f/2.8</p>
             </div>
         </div>
-        <div class="col-md-5 col-md-offset-7 col-sm-12">
+
+        <div class="col-md-6">
             <div class="photo_option">
                 <h3>Select a photo...</h3>
                 <%= image_tag 'landscape_20mm.jpg', class: "thumb", id: "image_1", 
@@ -21,6 +22,9 @@
                 <%= image_tag 'architecture_20mm.jpg', class: "thumb", id: "image_4", 
                   :onclick=>"setImageName(this, focal_length)" %>
             </div>
+        </div>
+
+        <div class="col-md-6">
             <div class="lens_selection">
                 <h3>Select a Lens...</h3>
                 <div class="lens_selector", onclick="setFocalLength('_20mm.jpg', image_name)">
@@ -48,6 +52,9 @@
                     <p class="lens_text">85mm</p>
                 </div>
             </div>
+        </div>
+
+        <div class="col-md-6 col-md-offset-6">
             <div class="aperture_selection" >
                 <h3> Set Aperture.</h3>
                 <%= image_tag "f2_8.png", class: "aperture_icon", style: 'height:auto;width:30%;' %>
