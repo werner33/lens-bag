@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151209035436) do
+ActiveRecord::Schema.define(version: 20151221171131) do
 
   create_table "lens", force: :cascade do |t|
     t.string   "name"
@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(version: 20151209035436) do
     t.datetime "updated_at"
     t.integer  "focal_length"
     t.string   "gallery_url"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "description", null: false
+    t.datetime "deadline"
   end
 
 end
